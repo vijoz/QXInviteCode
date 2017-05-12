@@ -1,5 +1,6 @@
 # QXInviteCode
-# 最新版本：1.0.2
+最新版本：1.0.2
+
 
 * SDK类是个单例类，通过调用getInstance()进行实例化
 * void init(String appId, String accessKey, String secret); //初始化SDK
