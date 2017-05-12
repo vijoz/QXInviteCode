@@ -9,4 +9,5 @@
 * void writeStatu(Map args, OnCallBack onCallBack); //修改成功邀请用户的可读状态
 * void isActive(Map args, OnCallBack onCallBack); //查询指定⽤户是否使⽤过邀请码
 
-** time：** 2017-5-12
+
+**time:** 2017-5-12
