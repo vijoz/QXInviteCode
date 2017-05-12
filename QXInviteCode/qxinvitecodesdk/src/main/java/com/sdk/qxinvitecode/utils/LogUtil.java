@@ -11,7 +11,7 @@ public class LogUtil {
 
     private static final String TAG = "InviteCodeSDK";
 
-    public static final boolean DEBUG = true;  //测试环境为true,生产环境为false
+    public static final boolean DEBUG = false;  //测试环境为true,生产环境为false
 
     public static void v(Object message) {
         if (DEBUG) {
