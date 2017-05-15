@@ -17,4 +17,6 @@ public interface InviteCodeSDK {
     void writeStatu(Map args, OnCallBack onCallBack); //修改成功邀请⽤用户的可读状态
 
     void isActive(Map args, OnCallBack onCallBack); //查询指定⽤用户是否使⽤用过邀请码
+
+    void isCodeEnable(Map args, OnCallBack onCallBack);//判断邀请码是否可以使⽤
 }

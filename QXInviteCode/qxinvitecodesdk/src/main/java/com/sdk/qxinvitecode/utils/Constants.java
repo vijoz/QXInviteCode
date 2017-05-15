@@ -29,4 +29,6 @@ public class Constants {
     public static final String URL_WRITE_STATU = SERVER + "app/write_statu?sig=";
     //查询指定用户是否使用过邀请码
     public static final String URL_IS_ACTIVE = SERVER + "app/is_active?sig=";
+    //判断邀请码是否可以使⽤
+    public static final String URL_IS_CODE_ENABLE = SERVER + "app/is_code_enable?sig=";
 }

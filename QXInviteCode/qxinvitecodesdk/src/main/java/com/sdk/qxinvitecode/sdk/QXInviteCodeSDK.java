@@ -120,6 +120,17 @@ public class QXInviteCodeSDK implements Serializable, InviteCodeSDK {
     }
 
     /**
+     * 判断邀请码是否可以使⽤
+     *
+     * @param args
+     * @param onCallBack
+     */
+    @Override
+    public void isCodeEnable(Map args, OnCallBack onCallBack) {
+        getDatas(args, onCallBack, Constants.URL_IS_CODE_ENABLE);
+    }
+
+    /**
      * 公用接口数据请求方法
      *
      * @param args
