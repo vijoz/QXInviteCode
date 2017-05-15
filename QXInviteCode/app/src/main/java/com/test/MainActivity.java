@@ -18,7 +18,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //初始化SDK数据
-//        QXInviteCodeSDK.init("1", "234erwsd2", "");
+//        QXInviteCodeSDK.initialize("1", "234erwsd2", "");
 //        SDKDemo();
     }
 

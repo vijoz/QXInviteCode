@@ -26,6 +26,7 @@ import java.util.TreeMap;
  */
 public class QXInviteCodeSDK implements Serializable, InviteCodeSDK {
 
+    private static QXInviteCodeSDK INSTANCE = null;
     private static String APP_ID = "";
     private static String ACCESS_KEY = "";
     private static String SECRET = "";
@@ -36,20 +37,17 @@ public class QXInviteCodeSDK implements Serializable, InviteCodeSDK {
     private QXInviteCodeSDK() {
     }
 
-    /**
-     * 单例对象实例化Holder
-     */
-    private static class SingletonHolder {
-        static final QXInviteCodeSDK INSTANCE = new QXInviteCodeSDK();
-    }
 
     /**
      * 单例的实例化方法
      *
      * @return
      */
-    public static QXInviteCodeSDK getInstance() {
-        return SingletonHolder.INSTANCE;
+    public synchronized static QXInviteCodeSDK getInstance() {
+        if (INSTANCE == null) {
+            INSTANCE = new QXInviteCodeSDK();
+        }
+        return INSTANCE;
     }
 
     /**
@@ -59,7 +57,7 @@ public class QXInviteCodeSDK implements Serializable, InviteCodeSDK {
      * @param accessKey
      * @param secret
      */
-    public static void init(String appID, String accessKey, String secret) {
+    public static void initialize(String appID, String accessKey, String secret) {
         APP_ID = appID;
         ACCESS_KEY = accessKey;
         SECRET = secret;
