@@ -8,8 +8,6 @@ import java.util.Map;
  */
 
 public interface InviteCodeSDK {
-    void init(String appid, String access, String secret); //初始化SDK
-
     void getCode(Map args, OnCallBack onCallBack); //获得用户邀请码
 
     void UseCode(Map args, OnCallBack onCallBack); //用户使用邀请码

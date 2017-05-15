@@ -59,8 +59,7 @@ public class QXInviteCodeSDK implements Serializable, InviteCodeSDK {
      * @param accessKey
      * @param secret
      */
-    @Override
-    public void init(String appID, String accessKey, String secret) {
+    public static void init(String appID, String accessKey, String secret) {
         APP_ID = appID;
         ACCESS_KEY = accessKey;
         SECRET = secret;

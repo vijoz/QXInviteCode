@@ -17,6 +17,8 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //初始化SDK数据
+//        QXInviteCodeSDK.init("1", "234erwsd2", "");
 //        SDKDemo();
     }
 
@@ -29,8 +31,6 @@ public class MainActivity extends Activity {
         map.put("uid", "1010");
         //实例化SDK
         QXInviteCodeSDK inviteCode = QXInviteCodeSDK.getInstance();
-        //初始化SDK数据
-        inviteCode.init("1", "234erwsd2", "");
         //获取Code邀请码
         inviteCode.getCode(map, new OnCallBack() {
             @Override
