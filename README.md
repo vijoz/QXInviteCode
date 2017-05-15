@@ -19,7 +19,7 @@ SDK的调用
 * void getEchos(Map args, OnCallBack onCallBack); //获取指定⽤户的成功邀请⽤用户ID
 * void writeStatu(Map args, OnCallBack onCallBack); //修改成功邀请用户的可读状态
 * void isActive(Map args, OnCallBack onCallBack); //查询指定⽤户是否使⽤过邀请码
-* void isCodeEnable(Map args, OnCallBack onCallBack)//判断邀请码是否可以使⽤
+* void isCodeEnable(Map args, OnCallBack onCallBack); //判断邀请码是否可以使⽤
 
 
 **更新Date:** 2017-5-15
