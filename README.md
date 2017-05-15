@@ -15,4 +15,4 @@ SDK的调用
 * void isActive(Map args, OnCallBack onCallBack); //查询指定⽤户是否使⽤过邀请码
 
 
-**time:** 2017-5-15
+**Time:** 2017-5-15
