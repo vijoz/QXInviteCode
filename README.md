@@ -1,7 +1,7 @@
 # QXInviteCode
 最新版本：1.0.3
 
-Gradle中的引用
+Gradle中引用
 
 ```
 dependencies {compile 'com.github.vijoz:QXInviteCode:1.0.3'}
@@ -11,7 +11,7 @@ SDK初始化
 
 * void init(String appId, String accessKey, String secret); //在Application类中初始化SDK
 
-SDK的调用
+SDK调用
 * SDK类是个单例类，通过调用getInstance()进行实例化
 
 * void getCode(Map args, OnCallBack onCallBack); //获得用户邀请码
