@@ -1,6 +1,14 @@
 # QXInviteCode
 最新版本：1.0.3
 
+Gradle中的引用
+
+```
+dependencies {
+	        compile 'com.github.vijoz:QXInviteCode:1.0.3'
+	}
+```
+
 SDK初始化
 
 * void init(String appId, String accessKey, String secret); //在Application类中初始化SDK
