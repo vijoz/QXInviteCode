@@ -4,9 +4,7 @@
 Gradle中的引用
 
 ```
-dependencies {
-	        compile 'com.github.vijoz:QXInviteCode:1.0.3'
-	}
+dependencies {compile 'com.github.vijoz:QXInviteCode:1.0.3'}
 ```
 
 SDK初始化
