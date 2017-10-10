@@ -18,8 +18,8 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //初始化SDK数据
-//        QXInviteCodeSDK.initialize("1", "234erwsd2", "");
-//        SDKDemo();
+        QXInviteCodeSDK.initialize("1", "234erwsd2", "");
+        SDKDemo();
     }
 
     /**
@@ -101,6 +101,22 @@ public class MainActivity extends Activity {
             @Override
             public void onFiled(String errmsg) {
                 LogUtil.i("Sig值isActive", errmsg.toString());
+            }
+        });
+
+        //判断邀请码是否可以使⽤
+        map = new HashMap();
+        map.put("uid", "1010");
+        map.put("code", "i1zuvjur");
+        inviteCode.isCodeEnable(map, new OnCallBack() {
+            @Override
+            public void onSuccess(String result) {
+                LogUtil.i("Sig值isCodeEnable", result);
+            }
+
+            @Override
+            public void onFiled(String errmsg) {
+                LogUtil.i("Sig值isCodeEnable", errmsg.toString());
             }
         });
 
